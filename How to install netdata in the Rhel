@@ -1,0 +1,13 @@
+ Installation Steps
+1.bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+2.sudo yum install -y epel-release
+sudo yum install -y zlib-devel libuuid-devel libmnl-devel gcc make git autoconf automake pkgconfig curl findutils libuv-devel lz4-devel liblz4-devel openssl-devel libcurl-devel json-c-devel libcap-devel libwebsockets-devel
+3.git clone https://github.com/netdata/netdata.git --depth=100
+cd netdata
+4.sudo ./netdata-installer.sh
+5.http://localhost:19999
+6.sudo systemctl start netdata
+7.sudo systemctl enable netdata
+8.sudo systemctl status netdata
+
+
